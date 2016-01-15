@@ -1,4 +1,4 @@
-<?php//--- LAST EDIT: 2015/09/19 ---//?>
+<?php//--- LAST EDIT: 2016/01/15 ---//?>
 <?php
 //--- Загрузка главной страницы для сбора информации--------------------------------------------------------------------------------------------------------------------
 
@@ -14,10 +14,10 @@
 						"User-Agent: ".$keys['user_agent']
 				));
 				curl_setopt($curl,CURLOPT_COOKIE, "lang=en_US;token=".$keys['token']."; _xsrf=".$keys['_xsrf'].";");
-				curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
 				curl_setopt($curl,CURLOPT_HEADER,false);
 				curl_setopt($curl,CURLOPT_AUTOREFERER,true);
 				curl_setopt($curl,CURLOPT_RETURNTRANSFER, true); // вывод страницы в переменную
+				curl_setopt($curl,CURLOPT_FOLLOWLOCATION, true); //отслеживание заголовка "Location: "
 				curl_setopt($curl,CURLOPT_NOBODY,false); //только шапку
 				curl_setopt($curl,CURLOPT_TIMEOUT, 30); 
 				$data = curl_exec($curl);

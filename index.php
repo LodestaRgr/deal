@@ -1,4 +1,4 @@
-<?php//--- LAST EDIT: 2015/11/15 ---//?>
+<?php//--- LAST EDIT: 2016/01/15 ---//?>
 <?php include("lib/include.php"); //Загрузка функция ?>
 <html>
 <head><meta http-equiv="Content-Type" Content="text/html; Charset=Windows-1251"></head>
@@ -27,7 +27,7 @@ deal | <a href="set/">set</a> | <a href="log/">log</a>
 */
 //--- параметры -------------------------------------------------------------------
 
-$host = 	'http://gameminer.ru';
+$host = 	'http://gameminer.net';
 
 		//Загрузка файла с ключами (форимат JSON)
 		$keys_file = dirname(__FILE__).'/keys.json';
