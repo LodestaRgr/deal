@@ -1,4 +1,4 @@
-<?php//--- LAST EDIT: 2016/01/15 ---//?>
+<?php//--- LAST EDIT: 2016/01/28 ---//?>
 <?php include("lib/include.php"); //Загрузка функция ?>
 <html>
 <head><meta http-equiv="Content-Type" Content="text/html; Charset=Windows-1251"></head>
@@ -43,6 +43,7 @@ $host = 	'http://gameminer.net';
 			$keys['user_agent'] =	'';
 		}
 */
+
 		$ar_topic = Array();
 		$j = 0;
 
