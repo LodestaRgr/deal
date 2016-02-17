@@ -1,4 +1,4 @@
-<?php//--- LAST EDIT: 2015/11/14 ---//?>
+<?php//--- LAST EDIT: 2016/02/17 ---//?>
 <?php include("../lib/include.php"); //Загрузка функция ?>
 <html>
 <head>
@@ -88,7 +88,7 @@ $("#send").live('click', function()
 		$keys = array();
 
 		if (file_exists($keys_file)){
-			$json = file_get_contents(dirname(__FILE__).'/../keys.json');
+			$json = file_get_contents($keys_file);
 			$keys = json_decode($json, true);
 		}
 /*		else {
